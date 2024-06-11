@@ -1,34 +1,58 @@
-/*  id selector has the highest ranking */
-#main-heading {
-    color: lightgreen
-}
-
-#main-heading {
-    color: darkcyan
-}
-
-/* class selector */
-.heading {
-    color: purple
-}
-
-.heading {
-    color: pink
-}
-
-h1 {
+/* h3 {
     color: red;
-    /* background-color: yellow; */
+} */
+
+/* .sub-heading {
+    color: red;
+} */
+
+
+/* find the .burger element and then inside it style h3 element */
+.burger h3 {
+    color: red;
 }
 
-h1 {
-    color: blue;
-}
-/* h1 here is type selector */
-h1 {
+.burger a {
     color: green;
+    font-size: 24px;
+}
+
+.hello h3 {
+    background-color: yellow;
+}
+
+/* .hello p {
+    color: blue
+} */
+
+/* .hello .world {
+    color: blue;
+    background-color: yellow;
+} */
+
+/* article .world {
     color: yellow;
 }
 
+article.hello {
+    background-color: pink;
+} */
 
+p.world {
+    background-color: yellow;
+}
 
+/* h1 {*/
+/* h1.heading { */
+/* h1.important { */
+/* h1.important.heading { */
+/* .important { */
+/* .heading { */
+.heading.important {
+    color: red
+}
+
+/* don't use id */
+#content p.text {
+    background-color: orange;
+}
