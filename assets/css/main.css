@@ -1,58 +1,114 @@
-/* h3 {
-    color: red;
-} */
-
-/* .sub-heading {
-    color: red;
-} */
+/* class combinations */
 
 
-/* find the .burger element and then inside it style h3 element */
-.burger h3 {
-    color: red;
+/* .button-danger {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: red;
 }
 
-.burger a {
-    color: green;
-    font-size: 24px;
-}
-
-.hello h3 {
+.button-warning {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: bold;
     background-color: yellow;
 }
 
-/* .hello p {
-    color: blue
+.button-info {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: lightblue;
 } */
 
-/* .hello .world {
+.btn {
+    font-size: 27px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-danger {
+    background-color: red;
+}
+
+.btn-warning {
+    background-color: yellow;
+}
+
+.btn-info {
+    background-color: lightblue;
+}
+
+
+
+
+
+/* how to calculate css selectors specificity */
+
+/* id-class-type selector */
+
+/* 1-0-0 */
+#heading {
+    color: green
+}
+
+/* 0-0-1 */
+h1 {
+    color: purple !important;
+}
+
+/* 0-1-0 */
+.heading {
     color: blue;
-    background-color: yellow;
-} */
-
-/* article .world {
-    color: yellow;
 }
 
-article.hello {
-    background-color: pink;
-} */
-
-p.world {
-    background-color: yellow;
+/* 0-2-1 */
+.content p.text {
+    color: blue;
 }
 
-/* h1 {*/
-/* h1.heading { */
-/* h1.important { */
-/* h1.important.heading { */
-/* .important { */
-/* .heading { */
-.heading.important {
+/* 0-1-1 */
+.content p {
     color: red
 }
 
-/* don't use id */
-#content p.text {
+/* 1-0-1 */
+#content button {
+    background-color: brown;
+}
+
+/* 0-3-2 */
+.content section.sub-section button.btn {
+    background-color: lightskyblue
+}
+
+/* 0-3-1 */
+.content .sub-section button.btn {
     background-color: orange;
 }
+
+/* 0-3-0 */
+.content .sub-section .btn {
+    background-color: pink;
+}
+
+/* 0-1-1 */
+.content button {
+    background-color: red;
+}
+
+/* 0-2-1 */
+.content button.btn {
+    background-color: yellow;
+}
+
+/* 0-3-0 */
+.content .btn.btn-warning {
+    background-color: purple;
+}
+
+
+
+
